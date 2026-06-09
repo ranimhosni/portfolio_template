@@ -41,7 +41,8 @@ export default {
         title: 'Full Stack Developer',
         subtitle: 'Master`s Degree in Intelligent Web Applications',
         cta: 'View My Work',
-        resume: '/CV_Ranim_Hosni.pdf'
+        resume: '/CV_Ranim Hosni.pdf'
+
       },
       aboutData: {
         image: require('@/assets/ranim.jpg'),
@@ -66,7 +67,7 @@ export default {
         {
           id: 1,
           title: 'Intelligent platform',
-          description: 'Participated in sprint planning, daily meetings, and iterative product deliveries.',
+          description: 'an innovative AI platform designed to make artificial intelligence accessible to everyone. It provides both an intuitive user interface and API integration, enabling developers, individuals, and local businesses to easily leverage AI-powered solutions.Participated in sprint planning, daily meetings, and iterative product deliveries.',
           image: require('@/assets/khabot.png'),
           tags: ['Vue.js', 'Node.js', 'MongoDB'],
           
@@ -75,7 +76,7 @@ export default {
         {
           id: 2,
           title: 'Ririʼs Candles',
-          description: 'E-commerce platform for a local candle business, featuring product listings, shopping cart, and secure checkout.',
+          description: 'E-commerce platform for a local candle business, featuring product listings, shopping cart, and secure checkout. Integrated DevOps practices through Docker containerization, Jenkins-based CI/CD pipelines, and automated deployment to improve reliability and streamline software delivery.',
           image: require('@/assets/riri.png'),
           tags: ['Laravel', 'Vuejs', 'MySQL'],
           github: 'https://github.com/ranimhosni/RiRi-s-Candle',
