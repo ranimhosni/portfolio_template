@@ -112,7 +112,7 @@ export default {
 .about-image-col {
   grid-column: 2;
   grid-row: 1;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 .image-frame {
