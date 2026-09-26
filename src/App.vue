@@ -114,6 +114,7 @@ export default {
           description: ' Developed a web appliation for animal adoption and care, allowing users to browse available pets, learn about their needs, and connect with local shelters. Implemented features such as pet profiles, search filters, and contact forms to facilitate the adoption process.',
           image: require('@/assets/buddy.png'),
           tags: ['Vue.js', 'Node.js', 'MongoDB'],
+          github: 'https://github.com/ranimhosni/portfolio_template',
           
         }
       ],
