@@ -207,8 +207,8 @@ export default {
   box-shadow: 0 8px 30px rgba(46, 49, 55, 0.06);
   border: 1px solid rgba(44,62,80,0.04);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
 }
 
 .project-card:hover {
