@@ -209,6 +209,8 @@ export default {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
   width: 100%;
+  min-width: 280px;
+  min-height: 320px;
 }
 
 .project-card:hover {
