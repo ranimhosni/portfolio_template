@@ -98,12 +98,10 @@ export default {
       const track = this.$refs.track;
       if (!track) return;
 
-      const firstCard = track.querySelector('.project-card-wrapper');
-      if (!firstCard) return;
-
-      const cardWidth = firstCard.getBoundingClientRect().width || 300;
-      const availableWidth = track.offsetWidth - (this.visibleItems - 1) * this.gap;
-      this.slideSize = Math.max(cardWidth, availableWidth / this.visibleItems);
+      const cardCount = this.projects.length;
+      const trackWidth = track.parentElement.clientWidth;
+      const usableWidth = Math.max(trackWidth - (this.visibleItems - 1) * this.gap, 0);
+      this.slideSize = cardCount > 0 ? usableWidth / this.visibleItems : 0;
       this.currentIndex = Math.min(this.currentIndex, this.maxIndex);
     },
     slide(direction) {
@@ -194,10 +192,12 @@ export default {
   gap: 2rem;
   transition: transform 0.35s ease;
   will-change: transform;
+  width: max-content;
 }
 
 .project-card-wrapper {
   flex: 0 0 auto;
+  min-width: 0;
 }
 
 .project-card {
@@ -208,6 +208,7 @@ export default {
   border: 1px solid rgba(44,62,80,0.04);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
+  width: 100%;
 }
 
 .project-card:hover {
